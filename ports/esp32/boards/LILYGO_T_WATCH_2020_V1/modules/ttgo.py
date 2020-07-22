@@ -169,12 +169,10 @@ class Motor:
         self.pwm = PWM(Pin(4, Pin.OUT), freq=1000, duty=0)
 
     def on(self):
-        self.pwm.resume()
         self.pwm.duty(5)
 
     def off(self):
         self.pwm.duty(0)
-        self.pwm.pause()
 
     def set_strength(self, strength):
         self.pwm.duty(5 * strength / 100)
