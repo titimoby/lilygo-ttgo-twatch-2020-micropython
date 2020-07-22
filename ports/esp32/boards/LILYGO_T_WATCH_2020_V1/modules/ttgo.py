@@ -11,7 +11,7 @@ from pcf8563 import PCF8563
 from machine import Pin, I2C, PWM
 
 
-class TTGO:
+class Watch:
     def __init__(self):
         self.__i2c__ = I2C(1, scl=Pin(22), sda=Pin(21))
         self.pmu = axp202.PMU(self.__i2c__)
