@@ -9,6 +9,11 @@ Original micropython README: https://github.com/micropython/micropython/blob/mas
 
 ## Build Instructions
 
+Please set `ESPIDF` parameter for the esp-idf install dir.
+It needs to match Micropython expected esp-idf, otherwise a warning will be displayed (and build will probably fail)
+For more details refer to [Setting up the toolchain and ESP-IDF](https://github.com/littlevgl/lv_micropython/blob/master/ports/esp32/README.md#setting-up-the-toolchain-and-esp-idf)
+For more details please refer to [Micropython ESP32 README](https://github.com/micropython/micropython/blob/master/ports/esp32/README.md).
+
 1. `sudo apt-get install build-essential libreadline-dev libffi-dev git pkg-config libsdl2-2.0-0 libsdl2-dev python`
 2. Clone this repo
 3. Setup esp-idf and xtensa toolchain
@@ -17,33 +22,6 @@ Original micropython README: https://github.com/micropython/micropython/blob/mas
 6. `make -C ports/esp32` from root of repo
 7. `cd ./ports/esp32/`
 8. `make deploy`
-### For ESP32 port
-
-Please set `ESPIDF` parameter for the esp-idf install dir.
-It needs to match Micropython expected esp-idf, otherwise a warning will be displayed (and build will probably fail)
-For more details refer to [Setting up the toolchain and ESP-IDF](https://github.com/littlevgl/lv_micropython/blob/master/ports/esp32/README.md#setting-up-the-toolchain-and-esp-idf)
-
-When using IL9341 driver, the color depth and swap mode need to be set to match ILI9341. This can be done from the command line.
-Here is the command to build ESP32 + LittlevGL which is compatible with ILI9341 driver:
-
-```
-make -C mpy-cross
-make -C ports/esp32 LV_CFLAGS="-DLV_COLOR_DEPTH=16 -DLV_COLOR_16_SWAP=1" BOARD=GENERIC_SPIRAM PYTHON=python2 deploy
-```
-
-Explanation about the paramters:
-- `LV_CFLAGS` are used to override color depth and swap mode, for ILI9341 compatibility.  
-  - `LV_COLOR_DEPTH=16` is needed if you plan to use the ILI9341 driver.
-  - `LV_COLOR_16_SWAP=1` is needed if you plan to use the [Pure Micropython Display Driver](https://blog.littlevgl.com/2019-08-05/micropython-pure-display-driver).
-- `BOARD` - I use WROVER board with SPIRAM. You can choose other boards from `ports/esp32/boards/` directory.
-- `PYTHON=python2` - depending on your installed `pyparsing` version, you might or might not need this.
-- `deploy` - make command will create ESP32 port of Micropython, and will try to deploy it through USB-UART bridge.
-
-For more details please refer to [Micropython ESP32 README](https://github.com/micropython/micropython/blob/master/ports/esp32/README.md).
-
-### For JavaScript port
-
-Refer to the README of the `lvgl_javascript` branch: https://github.com/lvgl/lv_micropython/tree/lvgl_javascript#for-javascript-port
 
 ## Super Simple Example
 
