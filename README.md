@@ -16,6 +16,7 @@ For more details please refer to [Micropython ESP32 README](https://github.com/m
 
 1. `sudo apt-get install build-essential libreadline-dev libffi-dev git pkg-config libsdl2-2.0-0 libsdl2-dev python`
 2. Clone this repo
+2.1 `git submodule update --init --recursive`
 3. Setup esp-idf and xtensa toolchain
 4. Edit `makefile` in `ports/esp32`
 5. `make -C mpy-cross` from root of repo
