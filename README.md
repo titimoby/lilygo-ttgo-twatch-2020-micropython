@@ -6,27 +6,27 @@ This micropython fork is SPECIALLY sharpened and designed for LilyGO TTGO T-Watc
 Other TTGO watch models are not supported!
 ************************************************************************
 ## Integrated libraries:
-1. `bma423` - Low-g driver acceleration sensor.
-   Written in C by [lewisxhe](https://github.com/lewisxhe).
+1. `bma423` - Low-g driver acceleration sensor. \
+   Written in C by [lewisxhe](https://github.com/lewisxhe). \
    Was taken from [here](https://github.com/lewisxhe/MicroPython_ESP32_psRAM_LoBo)
 
-2. `pcf8563` - Real-time clock/calendar driver.
+2. `pcf8563` - Real-time clock/calendar driver. \
    Written in Python by [lewisxhe](https://github.com/lewisxhe).  \
    Was taken from [here](https://github.com/lewisxhe/MicroPython_ESP32_psRAM_LoBo)
 
-3. `lvgl` - Popular embedded graphics library.
+3. `lvgl` - Popular embedded graphics library. \
    Written in C.
 
-4. `ft6x36` - Touch screen driver.
+4. `ft6x36` - Touch screen driver. \
    Written in C.  \
    Was taken from [here](https://github.com/lvgl/lv_port_esp32).
 
-5. `AXP202` - Advanced multi-channel power management chip driver.
+5. `AXP202` - Advanced multi-channel power management chip driver. \
    Written in Python.  \
    Updated to latest version by Anodev.  \
    Was taken from [here](https://github.com/lewisxhe/MicroPython_ESP32_psRAM_LoBo).
 
-6. `st7789_lvgl` - Display driver.
+6. `st7789_lvgl` - Display driver. \
    Written in C. \
    Was taken from [here](https://github.com/lvgl/lv_port_esp32).
 7. `ttgo` - Port of the official [library](https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library) for LilyGo TTGO watches.
