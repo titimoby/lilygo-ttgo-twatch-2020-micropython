@@ -35,6 +35,9 @@ This micropython fork is **SPECIALLY** sharpened and designed for LilyGO TTGO T-
 > Examples of using these libraries are located in the `examples/ttgo/` folder \
 > For api look `ports/esp32/boards/LILYGO_T_WATCH_2020_V1` folder
 ************************************************************************
+## :arrow_down: Download prebuild firmware:
+**[Download](https://github.com/OPHoperHPO/lilygo-ttgo-twatch-2020-micropython/releases/download/1.0/firmware.bin)**
+************************************************************************
 ## 🔨 Build Instructions
 ### 🧷 WARNING:
 Please set `ESPIDF` parameter for the esp-idf install dir. \
