@@ -15,7 +15,7 @@ For more details refer to [Setting up the toolchain and ESP-IDF](https://github.
 For more details please refer to [Micropython ESP32 README](https://github.com/micropython/micropython/blob/master/ports/esp32/README.md).
 
 1. `sudo apt-get install build-essential libreadline-dev libffi-dev git pkg-config libsdl2-2.0-0 libsdl2-dev python`
-2. Clone this repo
+2. Clone this repo \
 2.1 `git submodule update --init --recursive`
 3. Setup esp-idf and xtensa toolchain
 4. Edit `makefile` in `ports/esp32`
