@@ -10,12 +10,13 @@ Original micropython README: https://github.com/micropython/micropython/blob/mas
 ## Build Instructions
 
 1. `sudo apt-get install build-essential libreadline-dev libffi-dev git pkg-config libsdl2-2.0-0 libsdl2-dev python`
-2. `git clone --recurse-submodules https://github.com/littlevgl/lv_micropython.git`
-3. `cd lv_micropython`
-4. `make -C mpy-cross`
-5. `make -C ports/unix/`
-6. `./ports/unix/micropython`
-
+2. Clone this repo
+3. Setup esp-idf and xtensa toolchain
+4. Edit `makefile` in `ports/esp32`
+5. `make -C mpy-cross` from root of repo
+6. `make -C ports/esp32` from root of repo
+7. `cd ./ports/esp32/`
+8. `make deploy`
 ### For ESP32 port
 
 Please set `ESPIDF` parameter for the esp-idf install dir.
