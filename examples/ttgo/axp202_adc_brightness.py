@@ -69,7 +69,7 @@ def interface():
     update_task(None)
     lv.scr_load(scr)
     watch.tft.backlight_fade(100)
-    # lv.task_create(update_task, 1000, 5, None)
+    lv.task_create(update_task, 1000, 5, None)
 
 
 
