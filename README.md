@@ -31,7 +31,9 @@ This micropython fork is **SPECIALLY** sharpened and designed for LilyGO TTGO T-
    Was taken from [here](https://github.com/lvgl/lv_port_esp32).
 7. **`ttgo` - Port of the official [library](https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library) for LilyGo TTGO watches.** \
    Written in Python by Anodev.
-
+8. **`ir` - Driver for ir sender.** \
+   Written in C. \
+   Was taken from [here](https://github.com/haxplore/ESP32_RMT_IRLib).
 > Examples of using these libraries are located in the `examples/ttgo/` folder \
 > For api look `ports/esp32/boards/LILYGO_T_WATCH_2020_V1` folder
 ************************************************************************
