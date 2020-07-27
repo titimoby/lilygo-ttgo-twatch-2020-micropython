@@ -1,7 +1,7 @@
 # :snake: MicroPython for LilyGO TTGO T-Watch-2020 :snake:
 ************************************************************************
 ## 📄 Description:
-This is a fork of the official version of the micropython v1.9.4 with **bluetooth support**. \
+This is a fork of the official version of the micropython v1.12 with **bluetooth support**. \
 This micropython fork is **SPECIALLY** sharpened and designed for LilyGO TTGO T-Watch-2020-V1 watches.  \
 **Other TTGO watch models are not supported!**
 ************************************************************************
@@ -41,7 +41,7 @@ This micropython fork is **SPECIALLY** sharpened and designed for LilyGO TTGO T-
 **[Download](https://github.com/OPHoperHPO/lilygo-ttgo-twatch-2020-micropython/releases/download/1.2/firmware.bin)**
 ### Versions of the programs that were used to build the image:
 1. **ESP-IDF** - 4.0
-2. **Micropython** - 1.9.4
+2. **Micropython** - 1.12
 3. **lvgl** - 7.*
 > See the `latest` branch for the latest micropython version.
 ************************************************************************
